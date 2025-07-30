@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Современный Статический Сайт</title>
+  <script type="module" crossorigin src="./contact.js"></script>
+  <link rel="modulepreload" crossorigin href="./main2.js">
+  <link rel="stylesheet" crossorigin href="./main.css">
+  <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();window.__vite_is_modern_browser=true</script>
+  <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./about.html">О нас</a></li>
+                <li><a href="./services.html">Услуги</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="contact-hero">
+            <h1>Свяжитесь с нами</h1>
+            <p>Мы всегда рады новым проектам и сотрудничеству</p>
+        </section>
+        
+        <section class="contact-content">
+            <div class="contact-info">
+                <h2>Контактная информация</h2>
+                <p><strong>Адрес:</strong> г. Москва, ул. Примерная, д. 10</p>
+                <p><strong>Телефон:</strong> +7 (495) 123-45-67</p>
+                <p><strong>Email:</strong> info@example.com</p>
+                <p><strong>Часы работы:</strong> Пн-Пт с 9:00 до 18:00</p>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Форма обратной связи</h2>
+                <form id="feedback-form">
+                    <div class="form-group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Современный Статический Сайт. Все права защищены.</p>
+    </footer>
+    
+  <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+  <script nomodule crossorigin id="vite-legacy-polyfill" src="./polyfills-legacy.js"></script>
+  <script nomodule crossorigin id="vite-legacy-entry" data-src="./contact-legacy.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+</body>
+</html>

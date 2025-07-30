@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - Современный Статический Сайт</title>
+  <script type="module" crossorigin src="./services.js"></script>
+  <link rel="modulepreload" crossorigin href="./main2.js">
+  <link rel="stylesheet" crossorigin href="./main.css">
+  <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();window.__vite_is_modern_browser=true</script>
+  <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./about.html">О нас</a></li>
+                <li><a href="./services.html">Услуги</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="services-hero">
+            <h1>Наши услуги</h1>
+            <p>Широкий спектр решений для вашего бизнеса</p>
+        </section>
+        
+        <section class="services-grid">
+            <div class="service-card">
+                <h3>Веб-разработка</h3>
+                <p>Создание современных веб-сайтов и приложений с использованием передовых технологий.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>Дизайн интерфейсов</h3>
+                <p>Разработка интуитивно понятных и привлекательных пользовательских интерфейсов.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>Оптимизация</h3>
+                <p>Улучшение производительности и скорости загрузки вашего сайта.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>Поддержка</h3>
+                <p>Постоянная техническая поддержка и обновление ваших веб-ресурсов.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Современный Статический Сайт. Все права защищены.</p>
+    </footer>
+    
+  <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+  <script nomodule crossorigin id="vite-legacy-polyfill" src="./polyfills-legacy.js"></script>
+  <script nomodule crossorigin id="vite-legacy-entry" data-src="./services-legacy.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+</body>
+</html>

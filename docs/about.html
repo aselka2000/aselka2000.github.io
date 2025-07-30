@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - Современный Статический Сайт</title>
+  <script type="module" crossorigin src="./about.js"></script>
+  <link rel="modulepreload" crossorigin href="./main2.js">
+  <link rel="stylesheet" crossorigin href="./main.css">
+  <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();window.__vite_is_modern_browser=true</script>
+  <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./about.html">О нас</a></li>
+                <li><a href="./services.html">Услуги</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="about-hero">
+            <h1>О нашей компании</h1>
+            <p>Узнайте больше о нас и нашей миссии</p>
+        </section>
+        
+        <section class="about-content">
+            <h2>Наша история</h2>
+            <p>Мы - команда профессионалов, которая создает современные веб-решения для бизнеса. Наша компания была основана в 2020 году с целью предоставления качественных цифровых услуг.</p>
+            
+            <h2>Наша миссия</h2>
+            <p>Наша миссия - помогать бизнесу расти и развиваться в цифровую эпоху, предоставляя передовые веб-технологии и решения.</p>
+            
+            <h2>Наши ценности</h2>
+            <ul>
+                <li>Качество в каждой детали</li>
+                <li>Инновации и современные подходы</li>
+                <li>Удовлетворенность клиентов</li>
+                <li>Профессиональное развитие команды</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Современный Статический Сайт. Все права защищены.</p>
+    </footer>
+    
+  <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+  <script nomodule crossorigin id="vite-legacy-polyfill" src="./polyfills-legacy.js"></script>
+  <script nomodule crossorigin id="vite-legacy-entry" data-src="./about-legacy.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+</body>
+</html>
