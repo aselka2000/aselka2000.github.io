@@ -1,4 +1,4 @@
-// Простая реализация частиц для фона
+// Кибернетические частицы для фона
 class Particles {
     constructor() {
         this.canvas = document.createElement('canvas');
@@ -36,16 +36,21 @@ class Particles {
     
     createParticles() {
         this.particles = [];
-        const particleCount = Math.floor((window.innerWidth * window.innerHeight) / 5000);
+        const particleCount = Math.floor((window.innerWidth * window.innerHeight) / 3000);
         
         for (let i = 0; i < particleCount; i++) {
             this.particles.push({
                 x: Math.random() * this.canvas.width,
                 y: Math.random() * this.canvas.height,
-                size: Math.random() * 2 + 1,
-                speedX: (Math.random() - 0.5) * 0.5,
-                speedY: (Math.random() - 0.5) * 0.5,
-                color: `rgba(${Math.floor(Math.random() * 100 + 155)}, ${Math.floor(Math.random() * 100 + 155)}, 255, ${Math.random() * 0.5 + 0.2})`
+                size: Math.random() * 3 + 1,
+                speedX: (Math.random() - 0.5) * 1,
+                speedY: (Math.random() - 0.5) * 1,
+                color: Math.random() > 0.5 ? 
+                    `rgba(0, 243, 255, ${Math.random() * 0.8 + 0.2})` : 
+                    `rgba(255, 0, 200, ${Math.random() * 0.8 + 0.2})`,
+                // Добавляем эффект пульсации
+                pulse: Math.random() * 0.02 + 0.005,
+                pulsePhase: Math.random() * Math.PI * 2
             });
         }
     }
@@ -68,11 +73,19 @@ class Particles {
                 particle.speedY *= -1;
             }
             
+            // Пульсация
+            particle.pulsePhase += particle.pulse;
+            const currentSize = particle.size + Math.sin(particle.pulsePhase) * (particle.size * 0.5);
+            
             // Отрисовка частицы
             this.ctx.beginPath();
-            this.ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+            this.ctx.arc(particle.x, particle.y, currentSize, 0, Math.PI * 2);
             this.ctx.fillStyle = particle.color;
             this.ctx.fill();
+            
+            // Добавляем свечение
+            this.ctx.shadowColor = particle.color;
+            this.ctx.shadowBlur = 15;
         });
         
         // Продолжение анимации
