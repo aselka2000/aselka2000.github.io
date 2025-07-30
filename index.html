@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Современный Статический Сайт</title>
+    <meta name="description" content="Аселя - Full-stack разработчик, инженер, создатель веб-решений и автоматизаций">
+    <meta name="keywords" content="разработчик, программист, full-stack, инженер, веб-разработка, автоматизация">
+    <title>Аселя - Full-stack разработчик и инженер</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <script type="module" crossorigin src="/assets/main.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/main2.js">
   <link rel="stylesheet" crossorigin href="/assets/main.css">
@@ -14,44 +17,162 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/">Главная</a></li>
-                <li><a href="/about/">О нас</a></li>
-                <li><a href="/services/">Услуги</a></li>
-                <li><a href="/contact/">Контакты</a></li>
+                <li><a href="/">Обо мне</a></li>
+                <li><a href="#portfolio">Мои работы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <section class="hero">
-            <h1>Добро пожаловать на наш сайт</h1>
-            <p>Это современный статический сайт, созданный с использованием Vite</p>
-            <button id="cta-button">Узнать больше</button>
+        <!-- Это главный раздел, который видят посетители первым. Он же является разделом "Обо мне" -->
+        <section class="hero" id="about">
+            <h1>Привет! Меня зовут Аселя.</h1>
+            <p class="subtitle">Ваш персональный разработчик для веб-решений, инженерного ПО и автоматизации.</p>
+            
+            <div class="about-content">
+                <p>Я — full-stack разработчик с глубокой специализацией в инженерной разработке. Моя цель — создавать не просто код, а эффективные инструменты, которые решают реальные задачи вашего бизнеса или проекта. Я подхожу к каждому заказу комплексно, вникая в суть процесса, чтобы предложить наиболее оптимальное решение.</p>
+                
+                <div class="skills">
+                    <h2>Мои ключевые компетенции:</h2>
+                    <div class="skill-category">
+                        <h3>Full-stack веб-разработка:</h3>
+                        <ul>
+                            <li><strong>Frontend & Backend:</strong> JavaScript, Node.js</li>
+                            <li><strong>Разработка сайтов "под ключ":</strong> от идеи до запуска и поддержки.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Разработка программного обеспечения:</h3>
+                        <ul>
+                            <li>Владею языками <strong>C#, C++, Rust, Python</strong> для создания настольных приложений и сложных бэкенд-систем.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Инженерная разработка (моя страсть!):</h3>
+                        <ul>
+                            <li>Создание кастомных плагинов, дополнений и скриптов для <strong>AutoCAD, ArchiCAD, Revit</strong>.</li>
+                            <li>Автоматизация рутинных задач для инженеров и архитекторов.</li>
+                            <li>Разработка инженерных решений любой сложности под заказ.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Дополнительные услуги:</h3>
+                        <ul>
+                            <li>Работа с технической документацией.</li>
+                            <li>Создание профессиональных презентаций высокого уровня.</li>
+                            <li>Помощь и консультации студентам технических специальностей.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
         
-        <section class="features">
-            <h2>Наши преимущества</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>Быстродействие</h3>
-                    <p>Современные технологии обеспечивают молниеносную загрузку</p>
+        <!-- Раздел с примерами работ (Портфолио) -->
+        <section class="portfolio" id="portfolio">
+            <h2>Мои работы</h2>
+            <p class="section-description">Здесь представлены примеры проектов по основным направлениям моей деятельности.</p>
+            
+            <div class="portfolio-categories">
+                <div class="portfolio-category">
+                    <h3>Разработка сайтов (веб)</h3>
+                    <div class="project">
+                        <h4>Проект "Корпоративный сайт для строительной компании"</h4>
+                        <p class="project-description"><strong>Описание:</strong> Разработан многостраничный сайт с каталогом объектов, формой обратной связи и личным кабинетом для партнёров.</p>
+                        <p class="project-tech"><strong>Технологии:</strong> Node.js, Express, JavaScript (React), HTML5, CSS3.</p>
+                    </div>
+                    
+                    <div class="project">
+                        <h4>Проект "Лендинг для запуска нового продукта"</h4>
+                        <p class="project-description"><strong>Описание:</strong> Создан продающий одностраничный сайт с ярким дизайном, анимациями и интеграцией с CRM-системой.</p>
+                        <p class="project-tech"><strong>Технологии:</strong> HTML5, CSS (Sass), JavaScript.</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <h3>Адаптивность</h3>
-                    <p>Сайт отлично выглядит на всех устройствах</p>
+                
+                <div class="portfolio-category">
+                    <h3>Дизайн сайтов</h3>
+                    <div class="project">
+                        <h4>Проект "UX/UI для интернет-магазина"</h4>
+                        <p class="project-description"><strong>Описание:</strong> Разработан полный дизайн-макет, включая исследование пользовательского опыта (UX) и создание чистового интерфейса (UI) для удобной навигации и повышения конверсии.</p>
+                        <p class="project-tech"><strong>Инструменты:</strong> Figma, Adobe XD.</p>
+                    </div>
+                    
+                    <div class="project">
+                        <h4>Проект "Редизайн личного блога"</h4>
+                        <p class="project-description"><strong>Описание:</strong> Полное обновление визуального стиля блога с акцентом на читабельность и мобильную адаптацию.</p>
+                        <p class="project-tech"><strong>Инструменты:</strong> Figma.</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <h3>Простота</h3>
-                    <p>Легко разворачивается на GitHub Pages</p>
+                
+                <div class="portfolio-category">
+                    <h3>Инженерные плагины и дополнения</h3>
+                    <div class="project">
+                        <h4>Проект "Плагин для автоматизации спецификаций в Revit"</h4>
+                        <p class="project-description"><strong>Описание:</strong> Разработан плагин, который автоматически собирает данные из модели и формирует ведомости и спецификации по ГОСТ. Это сократило время работы инженеров на 80%.</p>
+                        <p class="project-tech"><strong>Технологии:</strong> C#, Revit API.</p>
+                    </div>
+                    
+                    <div class="project">
+                        <h4>Проект "Набор инструментов для AutoCAD"</h4>
+                        <p class="project-description"><strong>Описание:</strong> Создано дополнение с набором часто используемых команд для ускорения черчения и работы со слоями.</p>
+                        <p class="project-tech"><strong>Технологии:</strong> C++, AutoCAD API.</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-category">
+                    <h3>Программное обеспечение на заказ</h3>
+                    <div class="project">
+                        <h4>Проект "Конвертер инженерных данных"</h4>
+                        <p class="project-description"><strong>Описание:</strong> Настольное приложение для преобразования данных из одного проприетарного формата в другой с возможностью пакетной обработки файлов.</p>
+                        <p class="project-tech"><strong>Технологии:</strong> Python, PyQt.</p>
+                    </div>
+                    
+                    <div class="project">
+                        <h4>Проект "Система учета заказов"</h4>
+                        <p class="project-description"><strong>Описание:</strong> Разработана кастомная CRM-система для небольшой мастерской, включающая ведение клиентской базы, отслеживание статуса заказов и генерацию отчетов.</p>
+                        <p class="project-tech"><strong>Технологии:</strong> C#, .NET, SQLite.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Раздел с контактами -->
+        <section class="contacts" id="contacts">
+            <h2>Контакты</h2>
+            <p class="section-description">Готова обсудить ваш проект, ответить на вопросы или предложить решение для вашей задачи. Свяжитесь со мной любым удобным способом.</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>aselya@example.com</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>Telegram</h3>
+                    <p>@aselya_dev</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>GitHub</h3>
+                    <p>github.com/aselya</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/aselya</p>
                 </div>
             </div>
         </section>
     </main>
     
     <footer>
-        <p>&copy; 2025 Современный Статический Сайт. Все права защищены.</p>
+        <p>&copy; 2025 Аселя. Все права защищены.</p>
     </footer>
     
+    <script src="/assets/particles.js"></script>
   <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
   <script nomodule crossorigin id="vite-legacy-polyfill" src="/assets/polyfills-legacy.js"></script>
   <script nomodule crossorigin id="vite-legacy-entry" data-src="/assets/main-legacy.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
