@@ -3,68 +3,394 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Ася - Разработка плагинов и IT-услуги</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="page-container">
-        <!-- Header -->
-        <div class="header-bg"></div>
-        <div class="logo">JULIA HUANG</div>
-        <nav class="page-links">
-            <a href="#">PROJECTS</a>
-            <a href="#">ABOUT</a>
-            <a href="#">CONTACT</a>
+    <header>
+        <nav>
+            <a href="#about">Обо мне</a>
+            <a href="#services">Услуги</a>
+            <a href="#plugins">Плагины</a>
+            <a href="#contacts">Контакты</a>
         </nav>
-
-        <!-- Slogan/Intro -->
-        <div class="slogan-intro-bg"></div>
-        <div class="flower-icon"></div>
-        <h1 class="slogan-text">Artist Redefining Architecture with AI-Driven Design</h1>
-
-        <!-- Portrait -->
-        <div class="portrait-image"></div>
-
-        <!-- About -->
-        <div class="about-bg"></div>
-        <div class="about-circle-icon"></div>
-        <p class="about-text">Julia Huang is an innovative AI artist, renowned for blending cutting-edge technology with creative expression. Based in LA, she crafts unique digital art experiences accessible globally.</p>
-
-        <!-- Contact -->
-        <div class="contact-bg"></div>
-        <div class="contact-top-bar">
-            <p class="contact-questions">Have some<br>questions?</p>
-            <div class="contact-arrow"></div>
-        </div>
-        <h2 class="contact-me">Contact me</h2>
-
-        <!-- Socials -->
-        <div class="socials-bg"></div>
-        <nav class="socials-links">
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-            <a href="#">Linkedin</a>
-        </nav>
-
-        <!-- Work -->
-        <div class="work-bg"></div>
-        <div class="work-item-1">
-            <div class="work-image-1"></div>
-            <div class="work-arrow-1"></div>
-            <div class="work-title-1">Musea</div>
-            <div class="work-border-1"></div>
-        </div>
-        <div class="work-item-2">
-            <div class="work-title-2">Elara</div>
-            <div class="work-border-2"></div>
-        </div>
-        <div class="work-item-3">
-            <div class="work-title-3">Verve</div>
-            <div class="work-border-3"></div>
-        </div>
-        <div class="work-item-4">
-            <div class="work-title-4">Zephyr</div>
-        </div>
+    </header>
+    <!-- Прелоадер -->
+    <div id="preloader">
+        <div class="spinner"></div>
     </div>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <div class="hero-content">
+                    <img src="foto/foto.jpg" alt="Фото Аси" class="profile-pic">
+                    <div class="hero-text">
+                        <h1>Ася</h1>
+                        <p class="subtitle">Разработчик плагинов, IT-специалист и ваш помощник в мире технологий</p>
+                        <p>Привет! Я Ася, и я помогаю автоматизировать рутинные задачи, расширять функционал программ и решать сложные технические проблемы. Моя страсть - создание кастомных решений, которые делают вашу работу проще и эффективнее.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Мои услуги</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3>Разработка плагинов и дополнений</h3>
+                        <p>Создаю кастомные плагины и скрипты для широкого спектра программ, автоматизируя ваши рабочие процессы.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Помощь студентам</h3>
+                        <p>Помогаю с учебными проектами, лабораторными работами и курсовыми по программированию и IT-дисциплинам.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Настройка ПК и ПО</h3>
+                        <p>Установка и настройка операционных систем (Windows), программного обеспечения и решение технических проблем с вашим компьютером.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Работа с документацией</h3>
+                        <p>Создание, оформление и автоматизация документооборота. Помощь в разработке технической документации, инструкций и руководств.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="plugins">
+            <div class="container">
+                <h2>Разработка плагинов</h2>
+                <p class="section-description">Я создаю кастомные плагины и скрипты для широкого спектра программ, автоматизируя рабочие процессы и расширяя функциональность программного обеспечения.</p>
+                
+                <!-- САПР, архитектура и инженерия -->
+                <div class="category">
+                    <h3>САПР, архитектура и инженерия</h3>
+                    <div class="plugins-grid">
+                        <div class="plugin-card">
+                            <img src="logo/Autodesk AutoCAD.png" alt="AutoCAD" class="plugin-logo">
+                            <h4>Autodesk AutoCAD</h4>
+                            <p>Создаю LISP-скрипты и .NET-плагины для AutoCAD, автоматизируя чертежные и проектные работы.</p>
+                            <div class="technologies"><span class="tech">AutoLISP</span><span class="tech">C#</span><span class="tech">.NET API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Autodesk Revit.png" alt="Revit" class="plugin-logo">
+                            <h4>Autodesk Revit</h4>
+                            <p>Разрабатываю надстройки для Revit на C# с использованием Revit API для автоматизации BIM-процессов.</p>
+                            <div class="technologies"><span class="tech">C#</span><span class="tech">Revit API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Graphisoft ArchiCAD.png" alt="ArchiCAD" class="plugin-logo">
+                            <h4>Graphisoft ArchiCAD</h4>
+                            <p>Создаю дополнения для ArchiCAD с использованием GDL и API, улучшая архитектурное проектирование.</p>
+                            <div class="technologies"><span class="tech">GDL</span><span class="tech">Python</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/SketchUp.png" alt="SketchUp" class="plugin-logo">
+                            <h4>SketchUp</h4>
+                            <p>Создаю расширения для SketchUp на языке Ruby, автоматизируя архитектурное и инженерное проектирование.</p>
+                            <div class="technologies"><span class="tech">Ruby</span><span class="tech">SketchUp API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/SolidWorks.png" alt="SolidWorks" class="plugin-logo">
+                            <h4>SolidWorks</h4>
+                            <p>Разрабатываю макросы и надстройки для SolidWorks на языке VBA и C#, улучшая процессы машиностроения.</p>
+                            <div class="technologies"><span class="tech">VBA</span><span class="tech">C#</span><span class="tech">SolidWorks API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/FreeCAD.png" alt="FreeCAD" class="plugin-logo">
+                            <h4>FreeCAD</h4>
+                            <p>Создаю плагины и рабочие среды для FreeCAD на языке Python, расширяя возможности параметрического моделирования.</p>
+                            <div class="technologies"><span class="tech">Python</span><span class="tech">FreeCAD API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/QGIS.png" alt="QGIS" class="plugin-logo">
+                            <h4>QGIS</h4>
+                            <p>Разрабатываю плагины для QGIS на языке Python, автоматизируя геоинформационные процессы и анализ данных.</p>
+                            <div class="technologies"><span class="tech">Python</span><span class="tech">PyQGIS</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/ArcGIS Pro.png" alt="ArcGIS Pro" class="plugin-logo">
+                            <h4>ArcGIS Pro</h4>
+                            <p>Создаю надстройки для ArcGIS Pro на языке Python и C#, улучшая геоинформационный анализ и картографию.</p>
+                            <div class="technologies"><span class="tech">Python</span><span class="tech">C#</span><span class="tech">ArcGIS API</span></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Графический дизайн -->
+                <div class="category">
+                    <h3>Графический дизайн</h3>
+                    <div class="plugins-grid">
+                        <div class="plugin-card">
+                            <img src="logo/Adobe Photoshop.png" alt="Photoshop" class="plugin-logo">
+                            <h4>Adobe Photoshop</h4>
+                            <p>Разрабатываю плагины для Photoshop на языке JavaScript и C++, расширяя возможности растрового редактора.</p>
+                            <div class="technologies"><span class="tech">JavaScript</span><span class="tech">C++</span><span class="tech">Photoshop API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Adobe Illustrator.png" alt="Illustrator" class="plugin-logo">
+                            <h4>Adobe Illustrator</h4>
+                            <p>Создаю скрипты и плагины для Illustrator на языке JavaScript, автоматизируя векторную графику.</p>
+                            <div class="technologies"><span class="tech">JavaScript</span><span class="tech">Illustrator API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/GIMP.png" alt="GIMP" class="plugin-logo">
+                            <h4>GIMP</h4>
+                            <p>Разрабатываю плагины для GIMP на языке Python, расширяя возможности бесплатного растрового редактора.</p>
+                            <div class="technologies"><span class="tech">Python</span><span class="tech">GIMP API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Inkscape.png" alt="Inkscape" class="plugin-logo">
+                            <h4>Inkscape</h4>
+                            <p>Создаю расширения для Inkscape на языке Python, автоматизируя векторную графику и иллюстрации.</p>
+                            <div class="technologies"><span class="tech">Python</span><span class="tech">Inkscape API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/CorelDRAW.png" alt="CorelDRAW" class="plugin-logo">
+                            <h4>CorelDRAW</h4>
+                            <p>Разрабатываю макросы и надстройки для CorelDRAW на языке VBA и C++, улучшая процессы векторной графики.</p>
+                            <div class="technologies"><span class="tech">VBA</span><span class="tech">C++</span><span class="tech">CorelDRAW API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Affinity Photo.png" alt="Affinity Photo" class="plugin-logo">
+                            <h4>Affinity Photo</h4>
+                            <p>Создаю плагины и персональные действия для Affinity Photo, расширяя возможности растрового редактора.</p>
+                            <div class="technologies"><span class="tech">C++</span><span class="tech">Affinity API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Krita.png" alt="Krita" class="plugin-logo">
+                            <h4>Krita</h4>
+                            <p>Разрабатываю плагины для Krita на языке Python, улучшая возможности цифровой живописи.</p>
+                            <div class="technologies"><span class="tech">Python</span><span class="tech">Krita API</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Видеомонтаж и VFX -->
+                <div class="category">
+                    <h3>Видеомонтаж и VFX</h3>
+                    <div class="plugins-grid">
+                        <div class="plugin-card">
+                            <img src="logo/Adobe After Effects.png" alt="After Effects" class="plugin-logo">
+                            <h4>Adobe After Effects</h4>
+                            <p>Разрабатываю скрипты и плагины для After Effects на языке JavaScript и C++, ускоряя процесс создания визуальных эффектов.</p>
+                            <div class="technologies"><span class="tech">JavaScript</span><span class="tech">C++</span><span class="tech">After Effects API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Adobe Premiere Pro.png" alt="Premiere Pro" class="plugin-logo">
+                            <h4>Adobe Premiere Pro</h4>
+                            <p>Создаю плагины для Premiere Pro на языке C++ с использованием SDK, расширяя возможности видеомонтажа.</p>
+                            <div class="technologies"><span class="tech">C++</span><span class="tech">Premiere Pro SDK</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/DaVinci Resolve.png" alt="DaVinci Resolve" class="plugin-logo">
+                            <h4>DaVinci Resolve</h4>
+                            <p>Создаю плагины и скрипты для DaVinci Resolve на языке Python и Lua, автоматизируя цветокоррекцию и постобработку видео.</p>
+                            <div class="technologies"><span class="tech">Python</span><span class="tech">Lua</span><span class="tech">DaVinci API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/foundry Nuke.png" alt="Foundry Nuke" class="plugin-logo">
+                            <h4>Foundry Nuke</h4>
+                            <p>Разрабатываю плагины и скрипты для Nuke на языке Python, создавая сложные композитные эффекты для кино.</p>
+                            <div class="technologies"><span class="tech">Python</span><span class="tech">Nuke API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/final cut pro.png" alt="Final Cut Pro" class="plugin-logo">
+                            <h4>Final Cut Pro</h4>
+                            <p>Создаю плагины и эффекты для Final Cut Pro на языке Objective-C и Swift, расширяя возможности видеомонтажа на macOS.</p>
+                            <div class="technologies"><span class="tech">Objective-C</span><span class="tech">Swift</span><span class="tech">Final Cut Pro API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Vegas Pro.png" alt="Vegas Pro" class="plugin-logo">
+                            <h4>Vegas Pro</h4>
+                            <p>Разрабатываю скрипты и расширения для Vegas Pro на языке C# и .NET, улучшая процессы видеомонтажа.</p>
+                            <div class="technologies"><span class="tech">C#</span><span class="tech">.NET</span><span class="tech">Vegas Pro API</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Работа со звуком (DAW) -->
+                <div class="category">
+                    <h3>Работа со звуком (DAW)</h3>
+                    <div class="plugins-grid">
+                        <div class="plugin-card">
+                            <img src="logo/Ableton Live.png" alt="Ableton Live" class="plugin-logo">
+                            <h4>Ableton Live</h4>
+                            <p>Создаю Max for Live устройства и плагины для Ableton Live, расширяя возможности создания музыки.</p>
+                            <div class="technologies"><span class="tech">Max/MSP</span><span class="tech">JavaScript</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/FL Studio.png" alt="FL Studio" class="plugin-logo">
+                            <h4>FL Studio</h4>
+                            <p>Разрабатываю плагины для FL Studio на C++, создавая новые инструменты и эффекты.</p>
+                            <div class="technologies"><span class="tech">C++</span><span class="tech">FL Studio SDK</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Steinberg Cubase.png" alt="Steinberg Cubase" class="plugin-logo">
+                            <h4>Steinberg Cubase</h4>
+                            <p>Разрабатываю VST-плагины для Cubase на C++, расширяя арсенал звуковых эффектов и инструментов.</p>
+                            <div class="technologies"><span class="tech">C++</span><span class="tech">VST SDK</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Reaper.png" alt="Reaper" class="plugin-logo">
+                            <h4>Reaper</h4>
+                            <p>Создаю JSFX-скрипты и плагины на C++ для Reaper, автоматизируя обработку звука и MIDI.</p>
+                            <div class="technologies"><span class="tech">JSFX</span><span class="tech">C++</span><span class="tech">Reaper API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Avid Pro Tools.png" alt="Avid Pro Tools" class="plugin-logo">
+                            <h4>Avid Pro Tools</h4>
+                            <p>Разрабатываю AAX-плагины для Pro Tools на C++, создавая профессиональные инструменты для звукозаписи.</p>
+                            <div class="technologies"><span class="tech">C++</span><span class="tech">AAX SDK</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Logic Pro X.png" alt="Logic Pro X" class="plugin-logo">
+                            <h4>Logic Pro X</h4>
+                            <p>Создаю Audio Units (AU) плагины для Logic Pro X на Objective-C и Swift, расширяя возможности DAW.</p>
+                            <div class="technologies"><span class="tech">Objective-C</span><span class="tech">Swift</span><span class="tech">Audio Units</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Audacity.png" alt="Audacity" class="plugin-logo">
+                            <h4>Audacity</h4>
+                            <p>Разрабатываю Nyquist-плагины для Audacity, добавляя новые эффекты и инструменты для обработки звука.</p>
+                            <div class="technologies"><span class="tech">Nyquist</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Разработка игр -->
+                <div class="category">
+                    <h3>Разработка игр</h3>
+                    <div class="plugins-grid">
+                        <div class="plugin-card">
+                            <img src="logo/Unity.png" alt="Unity" class="plugin-logo">
+                            <h4>Unity</h4>
+                            <p>Создаю плагины и расширения для Unity на C#, улучшая игровой процесс и разработку.</p>
+                            <div class="technologies"><span class="tech">C#</span><span class="tech">Unity API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Unreal Engine.png" alt="Unreal Engine" class="plugin-logo">
+                            <h4>Unreal Engine</h4>
+                            <p>Разрабатываю плагины для Unreal Engine на C++, создавая новые возможности для игр.</p>
+                            <div class="technologies"><span class="tech">C++</span><span class="tech">Unreal Engine API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Godot Engine.svg" alt="Godot Engine" class="plugin-logo">
+                            <h4>Godot Engine</h4>
+                            <p>Создаю плагины и модули для Godot на GDScript и C++, расширяя функциональность движка.</p>
+                            <div class="technologies"><span class="tech">GDScript</span><span class="tech">C++</span><span class="tech">Godot API</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IDE и редакторы кода -->
+                <div class="category">
+                    <h3>IDE и редакторы кода</h3>
+                    <div class="plugins-grid">
+                        <div class="plugin-card">
+                            <img src="logo/Visual Studio Code.png" alt="VS Code" class="plugin-logo">
+                            <h4>Visual Studio Code</h4>
+                            <p>Создаю расширения для VS Code на TypeScript, улучшая процесс разработки.</p>
+                            <div class="technologies"><span class="tech">TypeScript</span><span class="tech">VS Code API</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Офисные пакеты -->
+                <div class="category">
+                    <h3>Офисные пакеты</h3>
+                    <div class="plugins-grid">
+                        <div class="plugin-card">
+                            <img src="logo/Microsoft Excel.png" alt="Excel" class="plugin-logo">
+                            <h4>Microsoft Excel</h4>
+                            <p>Создаю макросы на VBA и надстройки для Excel, автоматизируя обработку данных.</p>
+                            <div class="technologies"><span class="tech">VBA</span><span class="tech">Office Add-ins</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Microsoft Word.png" alt="Word" class="plugin-logo">
+                            <h4>Microsoft Word</h4>
+                            <p>Разрабатываю макросы на VBA и надстройки для Word, автоматизируя работу с документами.</p>
+                            <div class="technologies"><span class="tech">VBA</span><span class="tech">Office Add-ins</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Microsoft PowerPoint.png" alt="PowerPoint" class="plugin-logo">
+                            <h4>Microsoft PowerPoint</h4>
+                            <p>Создаю надстройки для PowerPoint, расширяя возможности создания презентаций.</p>
+                            <div class="technologies"><span class="tech">VBA</span><span class="tech">Office Add-ins</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/LibreOffice.png" alt="LibreOffice" class="plugin-logo">
+                            <h4>LibreOffice</h4>
+                            <p>Разрабатываю макросы и расширения для LibreOffice на Python и Basic, автоматизируя офисные задачи.</p>
+                            <div class="technologies"><span class="tech">Python</span><span class="tech">Basic</span><span class="tech">LibreOffice API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Notion.png" alt="Notion" class="plugin-logo">
+                            <h4>Notion</h4>
+                            <p>Создаю интеграции с Notion через API, автоматизируя рабочие процессы и управление знаниями.</p>
+                            <div class="technologies"><span class="tech">JavaScript</span><span class="tech">Notion API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Obsidian.png" alt="Obsidian" class="plugin-logo">
+                            <h4>Obsidian</h4>
+                            <p>Разрабатываю плагины для Obsidian на TypeScript, расширяя возможности для ведения заметок.</p>
+                            <div class="technologies"><span class="tech">TypeScript</span><span class="tech">Obsidian API</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Веб-браузеры -->
+                <div class="category">
+                    <h3>Веб-браузеры</h3>
+                    <div class="plugins-grid">
+                        <div class="plugin-card">
+                            <img src="logo/Google Chrome.png" alt="Chrome" class="plugin-logo">
+                            <h4>Google Chrome</h4>
+                            <p>Создаю расширения для Google Chrome на JavaScript, добавляя новые функции в браузер.</p>
+                            <div class="technologies"><span class="tech">JavaScript</span><span class="tech">Chrome API</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/mozilla Firefox.png" alt="Firefox" class="plugin-logo">
+                            <h4>Mozilla Firefox</h4>
+                            <p>Разрабатываю дополнения для Firefox с использованием WebExtensions API на JavaScript.</p>
+                            <div class="technologies"><span class="tech">JavaScript</span><span class="tech">WebExtensions</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Microsoft Edge.png" alt="Edge" class="plugin-logo">
+                            <h4>Microsoft Edge</h4>
+                            <p>Создаю расширения для Microsoft Edge на JavaScript, используя стандарт WebExtensions.</p>
+                            <div class="technologies"><span class="tech">JavaScript</span><span class="tech">WebExtensions</span></div>
+                        </div>
+                        <div class="plugin-card">
+                            <img src="logo/Opera.png" alt="Opera" class="plugin-logo">
+                            <h4>Opera</h4>
+                            <p>Разрабатываю расширения для Opera на JavaScript, добавляя кастомный функционал в браузер.</p>
+                            <div class="technologies"><span class="tech">JavaScript</span><span class="tech">WebExtensions</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <div class="container">
+                <h2>Свяжитесь со мной</h2>
+                <p>Готова обсудить ваш проект!</p>
+                <div class="contact-links">
+                    <p><strong>Телефон / WhatsApp:</strong> <a href="https://wa.me/79917062803">+7 991 706 2803</a></p>
+                    <p><strong>Telegram:</strong> <a href="https://t.me/unicornpresent" target="_blank">@unicornpresent</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ася. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
