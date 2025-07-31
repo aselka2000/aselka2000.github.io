@@ -1,0 +1,329 @@
+body {
+    margin: 0;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.page-container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F9F1F0;
+    margin: 0 auto;
+}
+
+/* Header */
+.header-bg {
+    position: absolute;
+    width: 1392px;
+    height: 101px;
+    left: 24px;
+    top: 24px;
+    background: #FADCD9;
+    border-radius: 20px;
+}
+
+.logo {
+    position: absolute;
+    left: 48px;
+    top: 66.03px;
+    font-weight: 300;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.page-links {
+    position: absolute;
+    width: 303px;
+    height: 11px;
+    left: 1062px;
+    top: 69.03px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-links a {
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Slogan/Intro */
+.slogan-intro-bg {
+    position: absolute;
+    width: 565px;
+    height: 479px;
+    left: 24px;
+    top: 146px;
+    background: #FADCD9;
+    border-radius: 20px;
+}
+
+.flower-icon {
+    position: absolute;
+    width: 119px;
+    height: 119px;
+    left: 440px;
+    top: 180px;
+    background-image: url('flower-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slogan-text {
+    position: absolute;
+    width: 475px;
+    height: 168px;
+    left: 48px;
+    top: 371px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1em;
+    color: #000000;
+    margin: 0;
+}
+
+/* Portrait */
+.portrait-image {
+    position: absolute;
+    width: 330px;
+    height: 476px;
+    left: 614px;
+    top: 149px;
+    background-image: url('portrait.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+/* About */
+.about-bg {
+    position: absolute;
+    width: 448px;
+    height: 351px;
+    left: 24px;
+    top: 649px;
+    background: #FADCD9;
+    border-radius: 20px;
+}
+
+.about-circle-icon {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    left: 48px;
+    top: 681px;
+    background-image: url('circle-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about-text {
+    position: absolute;
+    width: 296px;
+    height: 150px;
+    left: 48px;
+    top: 804px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.25em;
+    color: #000000;
+    margin: 0;
+}
+
+/* Contact */
+.contact-bg {
+    position: absolute;
+    width: 448px;
+    height: 351px;
+    left: 496px;
+    top: 649px;
+    background: #F8AFA6;
+    border-radius: 20px;
+}
+
+.contact-top-bar {
+    position: absolute;
+    width: 400px;
+    height: 38px;
+    left: 520px;
+    top: 679px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.contact-questions {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.15em;
+    color: #000000;
+    margin: 0;
+}
+
+.contact-arrow {
+    width: 38px;
+    height: 38px;
+    background-image: url('arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contact-me {
+    position: absolute;
+    width: 302px;
+    height: 39px;
+    left: 520px;
+    top: 908px;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 1.21em;
+    color: #000000;
+    margin: 0;
+}
+
+/* Socials */
+.socials-bg {
+    position: absolute;
+    width: 448px;
+    height: 101px;
+    left: 968px;
+    top: 899px;
+    background: #FADCD9;
+    border-radius: 20px;
+}
+
+.socials-links {
+    position: absolute;
+    width: 334px;
+    height: 11px;
+    left: 1025px;
+    top: 944px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials-links a {
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Work */
+.work-bg {
+    position: absolute;
+    width: 447px;
+    height: 726px;
+    left: 968px;
+    top: 149px;
+    background: #FADCD9;
+    border-radius: 20px;
+}
+
+.work-item-1 {
+    position: absolute;
+    width: 399px;
+    height: 350px;
+    left: 992px;
+    top: 183px;
+}
+
+.work-image-1 {
+    position: absolute;
+    width: 399px;
+    height: 269px;
+    top: 51px;
+    background-image: url('musea.png');
+    background-size: cover;
+    border-radius: 16px;
+}
+
+.work-arrow-1 {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 373px;
+    top: 2px;
+    background-image: url('arrow-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.work-title-1 {
+    position: absolute;
+    font-weight: 500;
+    font-size: 25px;
+    color: #000000;
+}
+
+.work-border-1 {
+    position: absolute;
+    width: 399px;
+    height: 0px;
+    top: 350px;
+    border: 2px solid #F8AFA6;
+}
+
+.work-item-2 {
+    position: absolute;
+    width: 399px;
+    height: 72px;
+    left: 992px;
+    top: 574px;
+}
+
+.work-title-2 {
+    position: absolute;
+    font-weight: 500;
+    font-size: 25px;
+    color: #000000;
+}
+
+.work-border-2 {
+    position: absolute;
+    width: 399px;
+    height: 0px;
+    top: 72px;
+    border: 2px solid #F8AFA6;
+}
+
+.work-item-3 {
+    position: absolute;
+    width: 399px;
+    height: 71px;
+    left: 992px;
+    top: 687px;
+}
+
+.work-title-3 {
+    position: absolute;
+    font-weight: 500;
+    font-size: 25px;
+    color: #000000;
+}
+
+.work-border-3 {
+    position: absolute;
+    width: 399px;
+    height: 0px;
+    top: 71px;
+    border: 2px solid #F8AFA6;
+}
+
+.work-item-4 {
+    position: absolute;
+    width: 79.62px;
+    height: 30.49px;
+    left: 992px;
+    top: 800px;
+}
+
+.work-title-4 {
+    position: absolute;
+    font-weight: 500;
+    font-size: 25px;
+    color: #000000;
+}
