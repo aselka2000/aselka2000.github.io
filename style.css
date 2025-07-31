@@ -219,11 +219,150 @@ main {
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
+    font-size: 7rem;
     margin-bottom: 1rem;
     color: var(--dark-color);
     position: relative;
     display: inline-block;
+}
+
+.letter-a {
+    display: inline-block;
+    transform: skew(-5deg);
+}
+
+.letter-s {
+    display: inline-block;
+    transform: skew(-10deg);
+}
+
+.letter-y {
+    display: inline-block;
+    transform: skew(-15deg);
+}
+
+.word1, .word2, .word3, .word4, .word5, .word6, .word7, .word8, .word9 {
+    display: inline-block;
+}
+
+.word1 {
+    transform: skew(-1deg);
+}
+
+.word2 {
+    transform: skew(-2deg);
+}
+
+.word3 {
+    transform: skew(-3deg);
+}
+
+.word4 {
+    transform: skew(-4deg);
+}
+
+.word5 {
+    transform: skew(-5deg);
+}
+
+.word6 {
+    transform: skew(-6deg);
+}
+
+.word7 {
+    transform: skew(-7deg);
+}
+
+.word8 {
+    transform: skew(-8deg);
+}
+
+.word9 {
+    transform: skew(-9deg);
+}
+
+.word10 {
+    transform: skew(-10deg);
+}
+
+.word11 {
+    transform: skew(-11deg);
+}
+
+.word12 {
+    transform: skew(-12deg);
+}
+
+.word13 {
+    transform: skew(-13deg);
+}
+
+.word14 {
+    transform: skew(-14deg);
+}
+
+.word15 {
+    transform: skew(-15deg);
+}
+
+.word16 {
+    transform: skew(-16deg);
+}
+
+.word17 {
+    transform: skew(-17deg);
+}
+
+.word18 {
+    transform: skew(-18deg);
+}
+
+.word19 {
+    transform: skew(-19deg);
+}
+
+.word20 {
+    transform: skew(-20deg);
+}
+
+.word21 {
+    transform: skew(-21deg);
+}
+
+.word22 {
+    transform: skew(-22deg);
+}
+
+.word23 {
+    transform: skew(-23deg);
+}
+
+.word24 {
+    transform: skew(-24deg);
+}
+
+.word25 {
+    transform: skew(-25deg);
+}
+
+.word26 {
+    transform: skew(-26deg);
+}
+
+.word27 {
+    transform: skew(-27deg);
+}
+
+.word28 {
+    transform: skew(-28deg);
+}
+
+.word29 {
+    transform: skew(-29deg);
+}
+
+.word30 {
+    transform: skew(-30deg);
 }
 
 .hero-text h1:after {
@@ -424,33 +563,46 @@ main {
 #contacts {
     padding: 6rem 0;
     background: var(--white-color);
-    text-align: center;
 }
 
-#contacts h2 {
+#contacts .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.contacts-content {
+    flex: 1;
+}
+
+.contacts-content h2 {
     font-size: 2.8rem;
     margin-bottom: 2rem;
     color: var(--dark-color);
     position: relative;
+    text-align: left;
 }
 
-#contacts h2:after {
+.contacts-content h2:after {
     content: '';
     position: absolute;
     bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 80px;
     height: 4px;
     background: var(--accent-color);
     border-radius: 2px;
 }
 
-#contacts p {
+.contacts-content p {
     font-size: 1.3rem;
     margin-bottom: 3rem;
     color: var(--text-secondary);
+    text-align: left;
 }
+
+
 
 .contact-links {
     display: flex;
@@ -476,6 +628,34 @@ main {
 .contact-links a:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
+}
+
+.contact-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.contact-button {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact-button:hover {
+    transform: scale(1.1);
+}
+
+.contact-button .icon {
+    width: 48px;
+    height: 48px;
+    display: block;
 }
 
 /* Футер */
@@ -594,16 +774,22 @@ footer {
 }
 
 .plugin-logo {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     margin-bottom: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .plugin-card h4 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--dark-color);
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
 }
 
 .plugin-card p {
@@ -632,7 +818,13 @@ footer {
 @media (max-width: 992px) {
     .hero-content {
         flex-direction: column;
+        text-align: left;
+    }
+    .hero-text {
         text-align: center;
+    }
+    .hero-text p, .hero-text .subtitle {
+        text-align: left;
     }
     
     .hero-text h1:after {
