@@ -96,4 +96,23 @@ document.addEventListener('DOMContentLoaded', () => {
     animatedElements.forEach(el => {
         observer.observe(el);
     });
+    
+    // Обработчик клика по изображению для отображения его на весь экран
+    const profilePic = document.querySelector('#about .profile-pic');
+    const imageModal = document.getElementById('image-modal');
+    const modalImage = imageModal.querySelector('.modal-image');
+
+    if (profilePic && imageModal && modalImage) {
+        profilePic.addEventListener('click', function() {
+            modalImage.src = this.src;
+            imageModal.classList.add('visible');
+        });
+
+        imageModal.addEventListener('click', function(e) {
+            // Закрываем, если клик был по фону (overlay), а не по изображению
+            if (e.target === imageModal) {
+                imageModal.classList.remove('visible');
+            }
+        });
+    }
 });
